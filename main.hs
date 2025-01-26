@@ -79,17 +79,17 @@ hundreds :: Int -> Int
 -- hundreds :: Integral a => a -> a
 hundreds    n   =  (n `div` 100) `mod` 10
 
-div 100: This operation removes the last two digits of the number. For example:
+--div 100: This operation removes the last two digits of the number. For example:
 
-1234 div 100 gives 12.
-23 div 100 gives 0.
-At this point, the result contains the digits starting from the hundreds place, but it may include additional digits to the left.
+--1234 div 100 gives 12.
+--23 div 100 gives 0.
+--At this point, the result contains the digits starting from the hundreds place, but it may include additional digits to the left.
 
-mod 10: This operation extracts the last digit of the result from div 100. Since div 100 ensures the hundreds place becomes the last digit in the quotient:
+--mod 10: This operation extracts the last digit of the result from div 100. Since div 100 ensures the hundreds place becomes the last digit in the quotient:
 
-12 mod 10 gives 2 (the hundreds digit of 1234).
-0 mod 10 gives 0 (the hundreds digit of 23, which is essentially absent).
-Thus, mod 10 ensures we isolate the digit in the hundreds place, regardless of the size of the number.
+--12 mod 10 gives 2 (the hundreds digit of 1234).
+--0 mod 10 gives 0 (the hundreds digit of 23, which is essentially absent).
+--Thus, mod 10 ensures we isolate the digit in the hundreds place, regardless of the size of the number.
 
 --------- 12 ----------
 
@@ -101,7 +101,7 @@ main = do
 middle :: String-> Char
 middle a = a !! ((length a) `div` 2) 
 
-!! for the index
+-- !! for the index
 
 
 Exercise 4.2
